@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { CheckCircle2, MapPin, ShieldCheck, Clock } from "lucide-react";
-import { CallButton, OutlineButton, WhatsAppButton } from "./cta-buttons";
+import { BookNowButton, OutlineButton } from "./cta-buttons";
 import heroImg from "@/assets/hero-technician.jpg";
 
 const stats = [
@@ -78,10 +78,9 @@ export function Hero() {
             >
               Book Service
             </OutlineButton>
-            <CallButton size="lg" className="!bg-foreground !text-background">
-              Call Now
-            </CallButton>
-            <WhatsAppButton size="lg">WhatsApp Now</WhatsAppButton>
+            <BookNowButton size="lg" className="!bg-foreground !text-background">
+              Book Now
+            </BookNowButton>
           </motion.div>
 
           <div className="mt-8 flex flex-wrap items-center gap-x-6 gap-y-3 text-xs font-medium text-muted-foreground">
@@ -125,7 +124,7 @@ export function Hero() {
             </span>
             <div>
               <div className="text-sm font-bold text-foreground">Booked in 60 sec</div>
-              <div className="text-xs text-muted-foreground">Call or WhatsApp us</div>
+              <div className="text-xs text-muted-foreground">Tap to book your repair</div>
             </div>
           </motion.div>
         </motion.div>

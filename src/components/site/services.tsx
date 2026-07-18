@@ -18,7 +18,7 @@ import {
   Hammer,
   type LucideIcon,
 } from "lucide-react";
-import { CallButton, WhatsAppButton } from "./cta-buttons";
+import { BookNowButton } from "./cta-buttons";
 
 type Service = { name: string; desc: string; icon: LucideIcon };
 
@@ -70,16 +70,9 @@ function Card({ s, i }: { s: Service; i: number }) {
         {s.desc}
       </p>
       <div className="flex flex-col gap-2 sm:flex-row">
-        <CallButton size="sm" full>
-          Call Now
-        </CallButton>
-        <WhatsAppButton
-          size="sm"
-          full
-          message={`Hi Consumer Care, I need help with: ${s.name}`}
-        >
-          Message Me
-        </WhatsAppButton>
+        <BookNowButton size="sm" full>
+          Book Now
+        </BookNowButton>
       </div>
     </motion.article>
   );
@@ -130,7 +123,7 @@ export function Services() {
           </h2>
           <p className="mt-4 text-base text-muted-foreground">
             Certified technicians · Genuine parts · Transparent charges. Tap
-            any service to call or WhatsApp instantly.
+            any service to book instantly.
           </p>
         </div>
 

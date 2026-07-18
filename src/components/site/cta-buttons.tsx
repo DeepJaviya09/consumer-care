@@ -1,5 +1,5 @@
 import { CONTACT } from "@/lib/contact";
-import { MessageCircle, Phone } from "lucide-react";
+import { Phone } from "lucide-react";
 import { cn } from "@/lib/utils";
 import type { ReactNode } from "react";
 
@@ -26,11 +26,11 @@ function baseClasses(size: Props["size"] = "md", full?: boolean) {
   );
 }
 
-export function CallButton({ size, full, className, children }: Props & { children?: ReactNode }) {
+export function BookNowButton({ size, full, className, children }: Props & { children?: ReactNode }) {
   return (
     <a
       href={CONTACT.tel}
-      aria-label={`Call Consumer Care at ${CONTACT.phoneDisplay}`}
+      aria-label={`Book service with ${CONTACT.business} at ${CONTACT.phoneDisplay}`}
       className={cn(
         baseClasses(size, full),
         "bg-primary text-primary-foreground shadow-[var(--shadow-soft)] hover:shadow-[var(--shadow-glow)]",
@@ -38,35 +38,13 @@ export function CallButton({ size, full, className, children }: Props & { childr
       )}
     >
       <Phone className="h-4 w-4" aria-hidden />
-      {children ?? "Call Now"}
+      {children ?? "Book Now"}
     </a>
   );
 }
 
-export function WhatsAppButton({
-  size,
-  full,
-  className,
-  message,
-  children,
-}: Props & { children?: ReactNode }) {
-  const href = message ? CONTACT.whatsappText(message) : CONTACT.whatsapp;
-  return (
-    <a
-      href={href}
-      target="_blank"
-      rel="noopener"
-      aria-label="Message Consumer Care on WhatsApp"
-      className={cn(
-        baseClasses(size, full),
-        "bg-whatsapp text-whatsapp-foreground shadow-[0_10px_30px_-12px_color-mix(in_oklab,var(--whatsapp)_45%,transparent)] hover:shadow-[0_0_40px_-8px_color-mix(in_oklab,var(--whatsapp)_55%,transparent)]",
-        className,
-      )}
-    >
-      <MessageCircle className="h-4 w-4" aria-hidden />
-      {children ?? "WhatsApp"}
-    </a>
-  );
+export function CallButton(props: Props & { children?: ReactNode }) {
+  return <BookNowButton {...props} />;
 }
 
 export function OutlineButton({

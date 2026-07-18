@@ -1,6 +1,5 @@
 import {
   Phone,
-  MessageCircle,
   MapPin,
   Clock,
   Mail,
@@ -18,7 +17,6 @@ const quickLinks = [
   { href: "#areas", label: "Service Areas" },
   { href: "#reviews", label: "Reviews" },
   { href: "#faq", label: "FAQ" },
-  { href: "#book", label: "Book Service" },
 ];
 
 export function ContactAndFooter() {
@@ -34,8 +32,8 @@ export function ContactAndFooter() {
               We're a call away — every day
             </h2>
             <p className="mt-4 text-base text-muted-foreground">
-              Reach us instantly by phone or WhatsApp, or drop by during
-              business hours.
+              Book your repair instantly by phone, or drop by during business
+              hours.
             </p>
           </div>
 
@@ -43,13 +41,6 @@ export function ContactAndFooter() {
             <div className="rounded-3xl border border-border bg-card p-6 shadow-[var(--shadow-card)] sm:p-8">
               <ul className="grid gap-5 sm:grid-cols-2">
                 <ContactItem icon={Phone} label="Call us" value={CONTACT.phoneDisplay} href={CONTACT.tel} />
-                <ContactItem
-                  icon={MessageCircle}
-                  label="WhatsApp"
-                  value={CONTACT.phoneDisplay}
-                  href={CONTACT.whatsapp}
-                  accent
-                />
                 <ContactItem icon={MapPin} label="Service area" value={CONTACT.location} />
                 <ContactItem icon={Clock} label="Business hours" value={CONTACT.hours} />
                 <ContactItem icon={Mail} label="Email" value={CONTACT.email} href={`mailto:${CONTACT.email}`} />
@@ -60,15 +51,7 @@ export function ContactAndFooter() {
                   href={CONTACT.tel}
                   className="inline-flex h-12 flex-1 items-center justify-center gap-2 rounded-full bg-primary px-5 text-sm font-bold text-primary-foreground shadow-[var(--shadow-soft)] transition-all hover:-translate-y-0.5"
                 >
-                  <Phone className="h-4 w-4" /> Call {CONTACT.phoneDisplay}
-                </a>
-                <a
-                  href={CONTACT.whatsapp}
-                  target="_blank"
-                  rel="noopener"
-                  className="inline-flex h-12 flex-1 items-center justify-center gap-2 rounded-full bg-whatsapp px-5 text-sm font-bold text-whatsapp-foreground shadow-[0_10px_30px_-12px_color-mix(in_oklab,var(--whatsapp)_45%,transparent)] transition-all hover:-translate-y-0.5"
-                >
-                  <MessageCircle className="h-4 w-4" /> Chat on WhatsApp
+                  <Phone className="h-4 w-4" /> Book Now
                 </a>
               </div>
             </div>
@@ -147,8 +130,8 @@ export function ContactAndFooter() {
                   </a>
                 </li>
                 <li>
-                  <a href={CONTACT.whatsapp} target="_blank" rel="noopener" className="hover:text-primary">
-                    WhatsApp us
+                  <a href={CONTACT.tel} className="hover:text-primary">
+                    Book Now
                   </a>
                 </li>
                 <li>{CONTACT.location}</li>

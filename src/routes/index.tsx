@@ -7,7 +7,6 @@ import { Brands } from "@/components/site/brands";
 import { Areas } from "@/components/site/areas";
 import { Reviews } from "@/components/site/reviews";
 import { Faq } from "@/components/site/faq";
-import { BookingForm } from "@/components/site/booking-form";
 import { ContactAndFooter } from "@/components/site/contact-footer";
 import { FloatingButtons, MobileBottomBar } from "@/components/site/floating";
 
@@ -51,7 +50,6 @@ function Home() {
         <Brands />
         <Areas />
         <Reviews />
-        <BookingForm />
         <Faq />
         <ContactAndFooter />
       </main>

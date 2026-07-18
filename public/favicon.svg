@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-label="Consumer Care logo">
+  <rect width="256" height="256" rx="56" fill="#2563eb" />
+  <g fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="20">
+    <path d="M96 44 68 72l24 24 28-28" />
+    <path d="M160 156l28-28-24-24-28 28" />
+    <path d="M122 70 74 118l14 14 48-48" />
+    <path d="M134 186 182 138l-14-14-48 48" />
+    <path d="m74 118 18 18-12 12-18-18" />
+    <path d="m182 138-18-18 12-12 18 18" />
+    <path d="M132 84 84 132" />
+    <path d="M124 172 172 124" />
+  </g>
+</svg>

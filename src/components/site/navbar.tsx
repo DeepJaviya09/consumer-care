@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Menu, Wrench, X } from "lucide-react";
 import { ThemeToggle } from "./theme-toggle";
-import { CallButton, WhatsAppButton } from "./cta-buttons";
+import { BookNowButton } from "./cta-buttons";
 import { cn } from "@/lib/utils";
 
 const links = [
@@ -64,12 +64,9 @@ export function Navbar() {
 
         <div className="flex items-center gap-2">
           <ThemeToggle className="hidden sm:inline-flex" />
-          <CallButton size="sm" className="hidden md:inline-flex">
-            Call
-          </CallButton>
-          <WhatsAppButton size="sm" className="hidden md:inline-flex">
-            WhatsApp
-          </WhatsAppButton>
+          <BookNowButton size="sm" className="hidden md:inline-flex">
+            Book Now
+          </BookNowButton>
           <button
             type="button"
             aria-label={open ? "Close menu" : "Open menu"}
@@ -100,10 +97,7 @@ export function Navbar() {
             ))}
             <div className="mt-3 flex items-center justify-between gap-2">
               <ThemeToggle />
-              <div className="flex gap-2">
-                <CallButton size="sm">Call</CallButton>
-                <WhatsAppButton size="sm">Chat</WhatsAppButton>
-              </div>
+              <BookNowButton size="sm">Book Now</BookNowButton>
             </div>
           </nav>
         </div>

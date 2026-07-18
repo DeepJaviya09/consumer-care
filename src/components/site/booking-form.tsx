@@ -1,6 +1,6 @@
 import { useState, type FormEvent } from "react";
 import { CalendarCheck, CheckCircle2 } from "lucide-react";
-import { CallButton, WhatsAppButton } from "./cta-buttons";
+import { BookNowButton } from "./cta-buttons";
 import { CONTACT } from "@/lib/contact";
 
 const appliances = ["Washing Machine", "Air Conditioner"];
@@ -15,20 +15,7 @@ export function BookingForm() {
 
   function onSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
-    const data = new FormData(e.currentTarget);
-    const msg = [
-      "*New Service Booking – Consumer Care*",
-      "",
-      `👤 Name: ${data.get("name")}`,
-      `📞 Mobile: ${data.get("mobile")}`,
-      `🧰 Appliance: ${data.get("appliance")}`,
-      `🏷️ Brand: ${data.get("brand")}`,
-      `🛠️ Service: ${data.get("service")}`,
-      `📝 Problem: ${data.get("problem")}`,
-      `📍 Address: ${data.get("address")}`,
-      `⏰ Preferred time: ${data.get("time")}`,
-    ].join("\n");
-    window.open(CONTACT.whatsappText(msg), "_blank", "noopener");
+    window.location.href = CONTACT.tel;
     setSent(true);
   }
 
@@ -44,9 +31,8 @@ export function BookingForm() {
               Book your repair in 60 seconds
             </h2>
             <p className="mt-4 text-base leading-relaxed text-muted-foreground">
-              Share a few details and our team will confirm your slot on
-              WhatsApp within minutes. Prefer talking? Just call — we're
-              open every day, 8 AM to 9 PM.
+              Share a few details and our team will confirm your slot soon.
+              Tap Book Now to open your phone dialer and speak with us directly.
             </p>
 
             <ul className="mt-6 space-y-3 text-sm text-muted-foreground">
@@ -64,8 +50,7 @@ export function BookingForm() {
             </ul>
 
             <div className="mt-8 flex flex-col gap-2.5 sm:flex-row">
-              <CallButton size="md">Call Now</CallButton>
-              <WhatsAppButton size="md">WhatsApp</WhatsAppButton>
+              <BookNowButton size="md">Book Now</BookNowButton>
             </div>
           </div>
 
@@ -131,15 +116,13 @@ export function BookingForm() {
                 type="submit"
                 className="inline-flex h-12 flex-1 items-center justify-center rounded-full bg-primary px-6 text-sm font-bold text-primary-foreground shadow-[var(--shadow-soft)] transition-all hover:-translate-y-0.5 hover:shadow-[var(--shadow-glow)] active:scale-[0.98]"
               >
-                Book Service
+                Book Now
               </button>
-              <CallButton size="md" className="sm:flex-1">Call Now</CallButton>
-              <WhatsAppButton size="md" className="sm:flex-1">WhatsApp</WhatsAppButton>
             </div>
 
             {sent && (
-              <p className="sm:col-span-2 text-center text-sm font-semibold text-whatsapp">
-                Opening WhatsApp with your booking details…
+              <p className="sm:col-span-2 text-center text-sm font-semibold text-primary">
+                Opening your phone dialer…
               </p>
             )}
           </form>

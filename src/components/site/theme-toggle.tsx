@@ -1,4 +1,4 @@
-import { Monitor, Moon, Sun } from "lucide-react";
+import { Moon, Sun } from "lucide-react";
 import { useTheme } from "@/lib/theme";
 import { cn } from "@/lib/utils";
 
@@ -6,7 +6,6 @@ export function ThemeToggle({ className }: { className?: string }) {
   const { theme, setTheme } = useTheme();
   const opts = [
     { v: "light" as const, icon: Sun, label: "Light" },
-    { v: "system" as const, icon: Monitor, label: "System" },
     { v: "dark" as const, icon: Moon, label: "Dark" },
   ];
   return (
