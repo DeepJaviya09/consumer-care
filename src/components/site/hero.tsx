@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { CheckCircle2, MapPin, ShieldCheck, Clock } from "lucide-react";
-import { BookNowButton, OutlineButton } from "./cta-buttons";
+import { BookNowButton } from "./cta-buttons";
 import heroImg from "@/assets/hero-technician.jpg";
 
 const stats = [
@@ -69,15 +69,8 @@ export function Hero() {
             initial={{ opacity: 0, y: 12 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.25 }}
-            className="mt-7 flex flex-col gap-3 sm:flex-row sm:flex-wrap"
+            className="mt-7"
           >
-            <OutlineButton
-              href="#book"
-              size="lg"
-              className="!bg-primary !text-primary-foreground !border-transparent hover:!bg-primary/90"
-            >
-              Book Service
-            </OutlineButton>
             <BookNowButton size="lg" className="!bg-foreground !text-background">
               Book Now
             </BookNowButton>

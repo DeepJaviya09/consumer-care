@@ -12,7 +12,7 @@ const faqs = [
   },
   {
     q: "Do you provide warranty on repairs?",
-    a: "Yes. Every repair is backed by up to a 90-day service warranty on both labour and any genuine spare parts we replace.",
+    a: "Yes. We stand by our service and parts with a warranty on the work we complete.",
   },
   {
     q: "Do you repair commercial appliances?",
