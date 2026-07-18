@@ -16,7 +16,7 @@ const faqJsonLd = {
   mainEntity: [
     { q: "Do you provide same-day service?", a: "Yes. For bookings before 6 PM our technician arrives the same day in most Ahmedabad areas, typically within 30–60 minutes." },
     { q: "Which brands do you repair?", a: "All major brands including LG, Samsung, Whirlpool, IFB, Bosch, Haier, Panasonic, Godrej, Siemens, Voltas, Blue Star, Daikin, Hitachi, Carrier, Lloyd, Onida." },
-    { q: "Do you provide warranty on repairs?", a: "Yes. Up to a 90-day service warranty on labour and genuine spare parts we replace." },
+    { q: "Do you provide warranty on repairs?", a: "Yes. We stand behind our work and the parts we install." },
     { q: "Do you repair commercial appliances?", a: "Yes. We service offices, clinics, salons, restaurants and residential complexes with AMC plans." },
     { q: "How can I book a service?", a: "Call or WhatsApp +91 75750 50058 or use the booking form on this page." },
     { q: "How much does an inspection cost?", a: "Doorstep inspection is charged nominally and waived off if you proceed with the repair." },

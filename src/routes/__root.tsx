@@ -140,6 +140,8 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { property: "og:type", content: "website" },
       { property: "og:locale", content: "en_IN" },
       { property: "og:site_name", content: "Consumer Care" },
+      { property: "og:image", content: "/og-image.svg" },
+      { property: "og:image:alt", content: "Consumer Care washing machine and AC repair service" },
       { name: "twitter:card", content: "summary_large_image" },
       {
         name: "twitter:title",
@@ -150,6 +152,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         content:
           "Same-day doorstep repair for Washing Machines and ACs in Ahmedabad. Call +91 7575050058.",
       },
+      { name: "twitter:image", content: "/og-image.svg" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },

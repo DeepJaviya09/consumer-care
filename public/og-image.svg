@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="Consumer Care branding">
+  <rect width="1200" height="630" rx="48" fill="#0f172a" />
+  <rect x="64" y="64" width="1072" height="502" rx="36" fill="#111827" stroke="#2563eb" stroke-width="4" />
+  <circle cx="320" cy="315" r="160" fill="#2563eb" />
+  <g fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="28">
+    <path d="M250 212 204 258l46 46 46-46" />
+    <path d="M390 404l46-46-46-46-46 46" />
+    <path d="M288 242 216 314" />
+    <path d="M352 350 424 278" />
+    <path d="M218 314 242 338" />
+    <path d="M424 278 400 254" />
+  </g>
+  <text x="520" y="278" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="46" font-weight="700">Consumer Care</text>
+  <text x="520" y="336" fill="#93c5fd" font-family="Arial, Helvetica, sans-serif" font-size="30">Washing Machine &amp; AC Repair</text>
+  <text x="520" y="392" fill="#cbd5e1" font-family="Arial, Helvetica, sans-serif" font-size="28">Same-day doorstep service in Ahmedabad</text>
+</svg>

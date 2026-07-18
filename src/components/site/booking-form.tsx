@@ -40,7 +40,6 @@ export function BookingForm() {
                 "Free doorstep visit across Ahmedabad",
                 "Fixed quote before we start the repair",
                 "Genuine parts with brand warranty",
-                "90-day service warranty on all repairs",
               ].map((t) => (
                 <li key={t} className="flex items-start gap-2.5">
                   <CheckCircle2 className="mt-0.5 h-4.5 w-4.5 shrink-0 text-whatsapp" />

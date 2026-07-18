@@ -7,7 +7,7 @@ const stats = [
   { k: "10K+", v: "Repairs done" },
   { k: "4.9★", v: "Avg. rating" },
   { k: "30 min", v: "Response time" },
-  { k: "90-day", v: "Service warranty" },
+  { k: "100%", v: "Transparent pricing" },
 ];
 
 export function Hero() {
@@ -61,8 +61,8 @@ export function Hero() {
             className="mt-5 max-w-xl text-base leading-relaxed text-muted-foreground sm:text-lg"
           >
             Fast, affordable, and reliable repair & maintenance for all major
-            brands. Genuine spare parts, transparent charges, and a 90-day
-            service warranty — right at your doorstep.
+            brands. Genuine spare parts, transparent charges, and honest
+            service — right at your doorstep.
           </motion.p>
 
           <motion.div
