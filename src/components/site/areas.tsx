@@ -15,9 +15,7 @@ export function Areas() {
           <h2 className="mt-3 text-3xl font-extrabold tracking-tight text-foreground sm:text-4xl">
             Doorstep service across Ahmedabad
           </h2>
-          <p className="mt-4 text-base text-muted-foreground">
-            Free doorstep visit anywhere in Ahmedabad and nearby localities.
-          </p>
+          
         </div>
 
         <div className="mt-10 flex flex-wrap justify-center gap-2.5">
